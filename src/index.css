@@ -1,13 +1,191 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    min-height: 100vh;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(#2b1055,#7597de);
+    z-index: 100;
+}
+
+nav .logo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav .navlinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav .navlinks .link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+nav .navlinks .link:hover{
+   color: orange;
+}
+
+nav .cart-counter{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.home{
+   position: relative;
+   height: 100vh;
+   width: 100%;
+   margin-top: 70px;
+   padding: 20px 30px;
+}
+
+.home .heading{
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+section h3{
+    color: #333;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.productWrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    width: 360px;
+    height: 430px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255,235,220,0.7);
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.1); ;
+}
+
+ img{
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+ .cartCard h3,
+ .card h3{
+    color: #333;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ .card h4,
+ .cartCard h4{
+     color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ .btn{
+    width: 150px;
+    padding: 10px;
+     background: linear-gradient(#2b1055,#7597de);
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     border: none;
+     outline: none;
+     border-radius: 10px;
+     align-self: center;
+     cursor: pointer;
+     margin-top: 15px;
+}
+
+ .btn:hover{
+    opacity: 0.8;
+}
+
+.cart{
+   position: relative;
+   height: 100vh;
+   width: 100%;
+   margin-top: 70px;
+   padding: 20px 30px;
+}
+
+.cart h3{
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cartWrapper{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cartCard{
+    width: 360px;
+    height: 430px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255,235,220,0.7);
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    box-shadow: 2px 7px 10px rgba(0, 0, 0, 0.1); ;
+}
+
+.cartCard h5{
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
 }
